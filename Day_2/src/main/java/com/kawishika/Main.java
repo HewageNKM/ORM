@@ -7,11 +7,11 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) {
-        Session session= FactoryConfiguration.getInstance().getSession();
+        Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         /*Laptop laptop = new Laptop("L002","Zenbook","Dell");
         session.persist(laptop);
@@ -40,11 +40,11 @@ public class Main {
         session.persist(watch);
         session.persist(watch3);
         session.persist(watch4);*/
-        Subject subject1 = new Subject("S001","Maths",null);
-        Subject subject2 = new Subject("S002","Science",null);
+        Subject subject1 = new Subject("S001", "Maths", null);
+        Subject subject2 = new Subject("S002", "Science", null);
 
-        Student student1 = new Student("S001","Kawishkia",null);
-        Student student2 = new Student("S002","Nadun",null);
+        Student student1 = new Student("S001", "Kawishkia", null);
+        Student student2 = new Student("S002", "Nadun", null);
 
         ArrayList<Student> studentArrayList = new ArrayList<>();
         ArrayList<Subject> subjectArrayList = new ArrayList<>();
