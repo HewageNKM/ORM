@@ -18,5 +18,5 @@ public class Student {
     private String id;
     private String name;
     @OneToOne
-    private Laptop laptop;
+    private Laptop laptop; // One To One Relationship
 }
