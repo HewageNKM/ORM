@@ -20,6 +20,6 @@ public class CRoom {
     @Id
     private String cId;
     private String cName;
-    @OneToMany(mappedBy = "cRoom",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "cRoom",fetch = FetchType.LAZY)
     private List<Student> students;
 }
