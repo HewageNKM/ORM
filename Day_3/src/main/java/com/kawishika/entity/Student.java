@@ -9,8 +9,8 @@ import lombok.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-@ToString
+@Getter
+@Setter
 public class Student {
     @Id
     private String sId;
