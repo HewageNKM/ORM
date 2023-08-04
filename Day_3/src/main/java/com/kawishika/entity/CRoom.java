@@ -1,9 +1,6 @@
 package com.kawishika.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.internal.build.AllowPrintStacktrace;
 
@@ -18,6 +15,6 @@ public class CRoom {
     @Id
     private String cId;
     private String cName;
-    @OneToMany(mappedBy = "cRoom",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cRoom",fetch = FetchType.LAZY,cascade= CascadeType.ALL)
     private List<Student> students;
 }

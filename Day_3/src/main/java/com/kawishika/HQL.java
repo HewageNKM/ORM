@@ -45,6 +45,7 @@ public class HQL {
         for (Student student:list1) {
             System.out.println(student.getSId()+" ,"+student.getName()+" ,"+student.getAddress());
         }*/
+
         transaction.commit();
     }
 }
